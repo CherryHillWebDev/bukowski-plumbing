@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Home | Bukowski Plumbing, Inc. South Jersey's Number 1 Plumber</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-left">
+                <div class="logo img-wrapper">
+                    <a href='./index.html'><img src="./img/bukowski-logo.webp"></a>
+                </div>
+            </div>
+            <nav>
+                <div class="header-right">
+                    <a class="link selected large">HOME</a>
+                    <div class="dropdown">
+                        <a href="./pages/services.html" class="link large">SERVICES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./pages/backflow-prevention.html">Backflow Prevention</a></li>
+                            <li><a href="./pages/commercial.html">Commercial</a></li>
+                            <li><a href="./pages/medical-facilities.html">Medical Facilities</a></li>
+                            <li><a href="./pages/real-estate.html">Real Estate</a></li>
+                            <li><a href="./pages/residential.html">Residential</a></li>
+                            <li><a href="./pages/restaurant.html">Restaurant</a></li>
+                        </ul>
+                    </div>
+                    <a href="./pages/about.html" class="link large">ABOUT</a>
+                    <a href="./pages/gallery.html" class="link large">GALLERY</a>
+                    <a href="#contact" class="header-contact large cta">CONTACT</a>
+
+                    <div class="hamburger" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+            
+                    <div class="mobile-nav" id="mobileNav">
+                        <div class="nav-links">
+                            <a class="link selected" href="#home">HOME</a>
+                            <div class="dropdown">
+                                <a class="mobile-service">SERVICES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./pages/backflow-prevention.html">Backflow Prevention</a></li>
+                                    <li><a href="./pages/commercial.html">Commercial</a></li>
+                                    <li><a href="./pages/medical-facilities.html">Medical Facilities</a></li>
+                                    <li><a href="./pages/real-estate.html">Real Estate</a></li>
+                                    <li><a href="./pages/residential.html">Residential</a></li>
+                                    <li><a href="./pages/restaurant.html">Restaurant</a></li>
+                                </ul>
+                            </div>
+                            <a href="./pages/about.html" class="link" href="#about">ABOUT</a>
+                            <a href="./pages/gallery.html" class="link" href="#gallery">GALLERY</a>
+                            <a href="./pages/contact.html" class="contact cta" href="./pages/contact.html">CONTACT</a>
+                        </div>
+                        <div class="grey">
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="hero-container">
+                <div class="hero-bg-color"></div>
+                <div class="hero-bg-holder img-wrapper">
+                    
+                    <img src="./img/index/bukowski-plumbing-hero-bg-1024.webp"
+                         srcset="./img/index/bukowski-plumbing-hero-bg-640.webp 640w,
+                                 ./img/index/bukowski-plumbing-hero-bg-1024.webp 1024w,
+                                 ./img/index/bukowski-plumbing-hero-bg-1920.webp 1920w"
+                         sizes="(max-width: 480px) 640px,
+                                 (max-width: 1024px) 1024px,
+                                 1920px"
+                         alt="Bukowski Plumbing, South Jersey's Number 1 Master Plumber">
+                </div>
+                <div class="content-container">
+                    <div class="hero-left">
+                        <p class="bold theme-font med-scale">Bukowski Plumbing, Inc. - Your Local Plumber</p>
+                        <h1 class="header1">+40 Years of Plumbing Excellence</h1>
+                        <p class="small-scale">For over 40 years, Bukowski Plumbing, Inc. has been South Jersey’s trusted, family-owned plumbing company. From quick repairs to full installations, our licensed plumbers deliver reliable service and honest craftsmanship.</p>
+                        <div class="horizontal-divider"></div>
+                        <div class="hero-social-proof">
+                            <p class="boldest size1-half">4.9/5 on Google!</p>
+                            <p><span class='stars'>★★★★★</span> Rating</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-right">
+                        <div class="contact-form-container" id="contact">
+                            <div class="contact-container">
+                                <div class="email-form" id="email-form">
+                                    <h2 class="med-scale">Contact Us Today!</h2>
+                                    <form target="_blank" action="https://formsubmit.co/fanukam@gmail.com" method="POST" enctype=multipart/form-data>
+                                        <div class="form-group">
+                                            <div class="form-row">
+                                                <input type="hidden" name="_subject" id="_subject" value="New Form Submission from {{ name }}" />
+                                                <input type="text" name="name" id="name" placeholder="Full Name*" required>
+                                                <input type="email" name="email" id="email" placeholder="Email Address*" required>
+                                                <input type="text" name="phone-number" id="phone-number" placeholder="What's your phone number?">
+                                                <input type="text" name="location" id="location" placeholder="Where are you located?">  
+                                            </div>
+                                            
+                                            <div class="email-body">
+                                                <textarea placeholder="Your Message*" name="message" rows="10" required></textarea>
+                                            </div>
+                                        </div>
+                                        <button class="submit-btn cta" type="submit" onclick="submitEmail()"><span>Send Email!</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-contact-info">
+                <div class="hero-contact-left">
+                    <div class="hero-img img-wrapper"><img src='./img/index/truck.webp'></div>
+                    <div class="truck-shadow"></div>
+                </div>
+                <div class="hero-contact-right">
+                    <div class="contact-phone">
+                        <p class="selected med-scale">Quick Service Number:</p>
+                        <p class="med-scale">(609) 876-3861</p>
+                    </div>
+                    <div class="contact-phone">
+                        <p class="selected med-scale">Main Office:</p>
+                        <p class="med-scale">(856) 456-3600</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content-container about-us">
+                <h2 class="large-scale">About Us</h2>
+                <p class="small-scale">Bukowski Plumbing has been providing reliable plumbing services to South Jersey homeowners and businesses for over 40 years. Proudly serving communities like Moorestown, Cherry Hill, Mt. Laurel, Pennsauken, Deptford, Collingswood, Maple Shade, and Haddonfield, our licensed plumbers specialize in leak repairs, drain cleaning, water heater installation, and complete bathroom remodels. When you choose Bukowski Plumbing, you get fast, professional service you can trust.</p>
+                <p class="small-scale">Family-owned and operated, we have the quality and experience in providing excellent plumbing services. When you call us, you won't get routed through phone systems. You'll be talking directly with me. </p>
+                <a href="tel:856-456-3600" class="cta about-btn">Call Today!</a>
+            </div>
+            <div class="horizontal-divider"></div>
+        </section>
+        <section>
+            <div class="content-container">
+                <h2 class="large-scale">Our Services</h2>
+                <div class="service-card-grid">
+                    <div class="service-card">
+                        <h3>Commercial</h3>
+                        <div class="service-card-img img-wrapper">
+                            <img src="./img/index/service-card-1.jpg">
+                        </div>
+                        <p>Bukowski Plumbing Inc. provides expert commercial plumbing services in South Jersey for offices, retail, and industrial spaces. From emergency repairs to scheduled maintenance, our licensed plumbers keep your business running without disruption.</p>
+                        <a href="./pages/commercial.html" class="ghost-btn red">Learn More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Residential</h3>
+                        <div class="service-card-img img-wrapper">
+                            <img src="./img/index/service-card-2.jpg">
+                        </div>
+                        <p>We offer trusted residential plumbing services throughout South Jersey, including leak repairs, fixture replacements, and full plumbing installations. Our team ensures your home’s system runs efficiently, giving you comfort and peace of mind.</p>
+                        <a href="./pages/residential.html" class="ghost-btn red">Learn More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Restaurant Services</h3>
+                        <div class="service-card-img img-wrapper">
+                            <img src="./img/index/service-card-3.jpg">
+                        </div>
+                        <p>Restaurants can’t afford downtime. That’s why we offer 24/7 commercial plumbing for restaurants across South Jersey. From grease traps to clogged drains and restroom repairs, we respond fast to keep your kitchen moving.</p>
+                        <a href="./pages/restaurant.html" class="ghost-btn red">Learn More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Medical Facilities</h3>
+                        <div class="service-card-img img-wrapper">
+                            <img src="./img/index/service-card-4.jpg">
+                        </div>
+                        <p>Our team specializes in plumbing for healthcare and medical facilities, ensuring reliable water and drainage systems that meet strict sanitation standards. We provide precise, code-compliant service across South Jersey.</p>
+                        <a href="./pages/medical-facilities.html" class="ghost-btn red">Learn More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Real Estate</h3>
+                        <div class="service-card-img img-wrapper">
+                            <img src="./img/index/service-card-5.jpg">
+                        </div>
+                        <p>We partner with real estate agents, investors, and property managers to handle plumbing inspections, certifications, winterizations, and repairs for homes and commercial properties throughout South Jersey.</p>
+                        <a href="./pages/real-estate.html" class="ghost-btn red">Learn More</a>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Backflow Prevention</h3>
+                        <div class="service-card-img img-wrapper">
+                            <img src="./img/index/service-card-6.jpg">
+                        </div>
+                        <p>Stay compliant and protect your water system with certified backflow prevention testing and repair. Bukowski Plumbing’s licensed backflow inspectors keep your property safe and up to code year-round.</p>
+                        <a href="./pages/backflow-prevention.html" class="ghost-btn red">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="icons">
+            <div class="content-container flex-even">
+                <div class="icon-holder">
+                    <div class="index-icon img-wrapper">
+                        <img src="./img/index/icon1.svg">
+                    </div>
+                    <p class="med-scale boldest">Expert Plumbing Services</p>
+                </div>
+                
+
+                <div class="icon-holder">
+                    <div class="index-icon img-wrapper">
+                        <img src="./img/index/icon2.svg">
+                    </div>
+                    <p class="med-scale boldest">Trusted Over 40 Years</p>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="index-icon img-wrapper">
+                        <img src="./img/index/icon3.svg">
+                    </div>
+                    <p class="med-scale boldest">Fast and Reliable</p>
+                </div>
+            </div>
+        </section>
+        <div class="horizontal-divider"></div>
+        <section class="emergency-services">
+            <h2 class="theme-font large-scale centered">Same Day & Emergency Services</h2>
+            <div class="blue-bg">
+                <div class="content-container flex-center">
+                    <div class="emergency-right">
+                        <h3 class="med-scale">Bukowski Plumbing Inc. offers fast service for important jobs</h3>
+                        <p class="small-scale">When plumbing emergencies strike, you need fast, reliable service — and Bukowski Plumbing is ready 24/7 to help. Serving South Jersey communities including Moorestown, Cherry Hill, Mt. Laurel, Pennsauken, Maple Shade, Haddonfield, and surrounding areas, our fully licensed and insured team handles everything from leak detection and pipe locating to sewer and drain cleaning, sewer line inspections, and sanitary or storm sewer replacements.</p>
+                        <p class="small-scale">Whether it’s a minor repair or a major installation, we are equipped to respond quickly and get your plumbing back on track.</p>
+                        <p class="small-scale">Call and ask for Robert!</p>
+                    </div>
+                    <div class="emergency-img img-wrapper">
+                        <img src="./img/index/emergency-img-500.jpg">
+                    </div>
+                </div>
+                <a href="tel:609-876-3861" class="ghost-btn white size1 centered">Call Emergency Number Now!</a>
+            </div>
+        </section>
+        <section class="content-container our-process">
+            <h2 class="large-scale centered">Our Process</h2>
+            <p class="med-scale bold centered">What you can expect from us:</p>
+            <div class="process-holder">
+                <div class="process-cards-container">
+                    <div class="process-card">
+                        <h3 class="process-number theme-font">1</h3>
+                        <p class="small-scale">Call Bukowski Plumbing to schedule a repair. With our dispatch system it allows us to assist you faster and you get live mobile updates down to the minute. All across South Jersey, our trusted services will prioritize your home.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <h3 class="process-number theme-font">2</h3>
+                        <p class="small-scale">One of our expert professionals will assess the situation and provide you with a solution that is customized to your unique situation. Have piece of mind knowing that you will receive a transparent estimate with no hidden fees.</p>
+                    </div>
+                    
+                    <div class="process-card">
+                        <h3 class="process-number theme-font">3</h3>
+                        <p class="small-scale">Our Professional Licensed Plumbers will perform your service quickly letting you get back to your day. Our team will then follow up to make sure all your needs and expectations were met. We pride ourselves on everything that we do.</p>
+                    </div>
+
+                </div>
+                <div class="process-img img-wrapper">
+                    <img src="./img/index/process-img.webp">
+                </div>
+            </div>
+            <div class="process-description">
+                <p class="small-scale">
+                    At Bukowski Plumbing, we know that dealing with plumbing issues can be stressful — that’s why we’ve built a straightforward, transparent process designed to make your life easier from the very first call. Our South Jersey customers appreciate how fast and simple it is to schedule service, get live updates from our team, and receive clear, honest estimates with no hidden fees. From Cherry Hill to Haddonfield, Collingswood, and throughout Camden County, we take the guesswork out of plumbing repairs.
+                </p>
+                <p class="small-scale">
+                    When you work with us, you’ll always know what to expect. Our licensed professionals arrive on time, assess the situation thoroughly, and complete the job efficiently so you can get back to your day. With consistent communication, trusted workmanship, and decades of experience serving South Jersey homes, Bukowski Plumbing delivers a smooth, hassle-free experience that gives you peace of mind every step of the way.
+                </p>
+                <a href="#contact" class="cta centered">Send An Email Today</a>
+            </div>
+        </section>
+        <section class="google-reviews">
+            <h2 class="large-scale centered theme-font">Our Reviews</h2>
+            <p class="med-scale centered bold">See why our customers keep coming back!</p>
+            <div class="content-container">
+                <button id="prev">&lt;</button>
+                <div class="review-container">
+                    <div class="review-card active">
+                        <p class="small-scale">"Robert and his son did an amazing job. Came out immediately for an emergency within 30 mins of calling. Did amazing work!! I will be using them again if I need work done. If you are looking for a plumber look no further!!!"</p>
+                        <p><strong>- Joseph E.</strong></p>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <div class="review-card">
+                        <p class="small-scale">"Wow!  Shout out to Robert Bukowski!  One simple phone call today and he solved my problem - Excellent!  Our tub handle broke and I was concerned I'd have to replace everything. But after sharing photos of the handle, and talking through a fix, Robert helped me locate a replacement part. I've ordered it and I am good to go.  Talk about a perfect plumber! Couldn't ask for more. Thank you Robert!"</p>
+                        <p><strong>- Sarah D.</strong></p>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <div class="review-card">
+                        <p class="small-scale">"Rob was very knowledgeable, listened to what I had to say, and gave me options on the best way to unthaw my pipes. Oh, and he also got the job done and more! Would highly recommend, will use them for any future plumbing needs."</p>
+                        <p><strong>- Jason G.</strong></p>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+
+                    <div class="review-card">
+                        <p class="small-scale">"We had a great experience with Robert. He came the same day as I called and was able to locate the issue. He told me there were 2 options for a fix and tried the cheapest one first. Unfortunately it didn’t work, but I did appreciate that he didn’t just go for the more expensive option off the bat. He was able to fix the issue the next day. Would definitely recommend!"</p>
+                        <p><strong>- Sam</strong></p>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <button id="next">&gt;</button>
+            </div>
+        </section>
+        <section class="service-areas">
+            <div class="content-container">
+                <h2 class="large-scale theme-font centered">Proudly Serving South Jersey</h2>
+                <p class="small-scale">Bukowski Plumbing, Inc. proudly serves residential and commercial customers throughout South Jersey, including Cherry Hill, Moorestown, Mt. Laurel, Haddonfield, Maple Shade, Pennsauken, and nearby communities. Whether you need emergency repairs, plumbing installation, or water heater service, our licensed plumbers are ready to help wherever you are in the region.</p>
+                <div class="flex-center">
+                    <a href="tel:856-456-3600" class="cta">Call Our Main Office</a>
+                    <a href="tel:609-876-3861" class="cta">Call Emergency Line</a>
+                    <a href="#contact" class="cta">Send an Email</a>
+                </div>
+                <div class="service-area-truck">
+                    <div class="truck-img img-wrapper">
+                        <img src='./img/index/truck.webp'>
+                        <div class="truck-shadow2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-divider"></div>
+        <div class="footer-holder">
+            <div class="footer-top-grid">
+                <div class="img-wrapper footer-logo">
+                    <img src="./img/bukowski-logo.webp">
+                </div>
+                <div class="footer-info">
+                    <span class="footer-info-line">
+                        <div class="img-wrapper info-pic">
+                            <img src="./img/phone-icon.svg" alt="phone icon">
+                        </div>
+                        <p><a href="tel:856-456-3600">(856) 456-3600</a></p>
+                    </span>
+                    <span class="footer-info-line">
+                        <div class="img-wrapper info-pic">
+                            <img src="./img/email-icon.svg" alt="email icon">
+                        </div>
+                        <p><a>princeofplumbing@comcast.net</a></p>
+                    </span>
+                    <span class="footer-info-line">
+                        <p>N.J.M.P. LIC. #11801</p>
+                    </span>
+                    <span class="footer-info-line">
+                        <p>P.A.M.P. LIC #RB425134</p>
+                    </span>
+                    <span class="footer-info-line">
+                        <p>Inspector/Tester #10136</p>
+                    </span>
+                </div>
+                <div class="footer-areas">
+                    <h4>Areas Served:</h4>
+                    <span class="footer-ul">
+                        <ul>
+                            <li>Camden County</li>
+                            <li>Cherry Hill</li>
+                            <li>Cinnaminson</li>
+                            <li>Collingswood</li>
+                            <li>Deptford</li>
+                            <li>Haddonfield</li>
+                            <li>Haddon Township</li>
+                            <li>Moorestown</li>
+                            <li>Mt. Laurel</li>
+                            <li>Washington Township</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="footer-browse">
+                    <h4>BROWSE</h4>
+                    <ul class="footer-browse-list">
+                        <li><a href="./pages/about.html">About</a></li>
+                        <li><a href="./pages/gallery.html">Gallery</a></li>
+                        <li><a href="#contact" class="footer-book">GET IN TOUCH</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-site-info">
+                    <p>&#169; Bukowski Plumbing Inc. <span class='copyright-year'>2025</span> | Website by <a href="https://cherryhillwebdev.com/index.html">Cherry Hill Web Dev</a></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

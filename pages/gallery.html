@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>About Us | Bukowski Plumbing - South Jersey's No. 1 Family Owned Plumber</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-left">
+                <div class="logo img-wrapper">
+                    <a href='../index.html'><img src="../img/bukowski-logo.webp"></a>
+                </div>
+            </div>
+            <nav>
+                <div class="header-right">
+                    <a href="../index.html" class="link large">HOME</a>
+                    <div class="dropdown">
+                        <a href="./pages/services.html" class="link large">SERVICES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./backflow-prevention.html">Backflow Prevention</a></li>
+                            <li><a href="./commercial.html">Commercial</a></li>
+                            <li><a href="./medical-facilities.html">Medical Facilities</a></li>
+                            <li><a href="./real-estate.html">Real Estate</a></li>
+                            <li><a href="./residential.html">Residential</a></li>
+                            <li><a href="./restaurant.html">Restaurant</a></li>
+                        </ul>
+                    </div>
+                    <a href="./about.html" class="link large">ABOUT</a>
+                    <a href="./gallery.html" class="link selected large">GALLERY</a>
+                    <a href="../index.html#contact" class="header-contact large cta">CONTACT</a>
+
+                    <div class="hamburger" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+            
+                    <div class="mobile-nav" id="mobileNav">
+                        <div class="nav-links">
+                            <a href="../index.html" class="link">HOME</a>
+                            <div class="dropdown">
+                                <a class="mobile-service">SERVICES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="./backflow-prevention.html">Backflow Prevention</a></li>
+                                    <li><a href="./commercial.html">Commercial</a></li>
+                                    <li><a href="./medical-facilities.html">Medical Facilities</a></li>
+                                    <li><a href="./real-estate.html">Real Estate</a></li>
+                                    <li><a href="./residential.html">Residential</a></li>
+                                    <li><a href="./restaurant.html">Restaurant</a></li>
+                                </ul>
+                            </div>
+                            <a href="./about.html" class="link">ABOUT</a>
+                            <a href="./gallery.html" class="link selected">GALLERY</a>
+                            <a href="../index.html#contact" class="contact cta">CONTACT</a>
+                        </div>
+                        <div class="grey">
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-gallery">
+        <h1 class="header1 theme-font">Our Portfolio</h1>
+        <p class="small-scale">Explore our completed projects showcasing expert craftsmanship across South Jersey. Click each box to see more pictures of the project!</p>
+    </section>
+
+    <section class="filter-section">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="residential">Residential</button>
+            <button class="filter-btn" data-filter="commercial">Commercial</button>
+            <button class="filter-btn" data-filter="retail">Retail</button>
+            <button class="filter-btn" data-filter="backflow">Backflow Prevention</button>
+        </div>
+    </section>
+
+    <div class="gallery-container">
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item" data-category="residential" id="0">
+                <div class="gallery-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('../img/gallery/underground-repair1/underground1.webp');"></div>
+                <div class="gallery-info">
+                    <h3>Underground Repair</h3>
+                    <p>Repairing a rusted residential underground pipe system.</p>
+                    <span class="category-tag">Residential</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="retail" id="1">
+                <div class="gallery-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('../img/gallery/drain-clean1/drain-clean1.webp');"></div>
+                <div class="gallery-info">
+                    <h3>Drain Clean/Pipe Inspection</h3>
+                    <p>Cleaning and inspecting a retail pipe system.</p>
+                    <span class="category-tag">Retail</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="residential" id="2">
+                <div class="gallery-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('../img/gallery/fireplace1/fireplace1.webp');"></div>
+                <div class="gallery-info">
+                    <h3>Fireplace Replacement</h3>
+                    <p>Replacing a gas fireplace with an electric one.</p>
+                    <span class="category-tag">Residential</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="residential" id="3">
+                <div class="gallery-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url('../img/gallery/hot-water1/hot-water1.webp');"></div>
+                <div class="gallery-info">
+                    <h3>Water Heater Replacement</h3>
+                    <p>Replacing a residential hot water heater.</p>
+                    <span class="category-tag">Residential</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <h2 class="large-scale theme-font">Need our help?</h2>
+        <p>Let us know what we can do for you!</p>
+        <a href="../index.html#contact" class="cta">Get In Touch Today</a>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <button class="modal-nav-btn modal-prev-btn" onclick="changeModalPicture(-1)"><span>&#8249;</span></button>
+            <img class="modal-image" id="modalImage" src="" alt="Gallery Image">
+            <button class="modal-nav-btn modal-next-btn" onclick="changeModalPicture(1)"><span>&#8250;</span></button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-divider"></div>
+        <div class="footer-holder">
+            <div class="footer-top-grid">
+                <div class="img-wrapper footer-logo">
+                    <img src="../img/bukowski-logo.webp">
+                </div>
+                <div class="footer-info">
+                    <span class="footer-info-line">
+                        <div class="img-wrapper info-pic">
+                            <img src="../img/phone-icon.svg" alt="phone icon">
+                        </div>
+                        <p><a href="tel:856-456-3600">(856) 456-3600</a></p>
+                    </span>
+                    <span class="footer-info-line">
+                        <div class="img-wrapper info-pic">
+                            <img src="../img/email-icon.svg" alt="email icon">
+                        </div>
+                        <p><a>princeofplumbing@comcast.net</a></p>
+                    </span>
+                    <span class="footer-info-line">
+                        <p>N.J.M.P. LIC. #11801</p>
+                    </span>
+                    <span class="footer-info-line">
+                        <p>P.A.M.P. LIC #RB425134</p>
+                    </span>
+                    <span class="footer-info-line">
+                        <p>Inspector/Tester #10136</p>
+                    </span>
+                </div>
+                <div class="footer-areas">
+                    <h4>Areas Served:</h4>
+                    <span class="footer-ul">
+                        <ul>
+                            <li>Camden County</li>
+                            <li>Cherry Hill</li>
+                            <li>Cinnaminson</li>
+                            <li>Collingswood</li>
+                            <li>Deptford</li>
+                            <li>Haddonfield</li>
+                            <li>Haddon Township</li>
+                            <li>Moorestown</li>
+                            <li>Mt. Laurel</li>
+                            <li>Washington Township</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="footer-browse">
+                    <h4>BROWSE</h4>
+                    <ul class="footer-browse-list">
+                        <li><a href="./pages/about.html">About</a></li>
+                        <li><a href="./pages/gallery.html">Gallery</a></li>
+                        <li><a href="#contact" class="footer-book">GET IN TOUCH</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <div class="footer-site-info">
+                    <p>&#169; Bukowski Plumbing Inc. <span class='copyright-year'>2025</span> | Website by <a href="https://cherryhillwebdev.com/index.html">Cherry Hill Web Dev</a></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
