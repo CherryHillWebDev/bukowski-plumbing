@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preload" href="./css/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/styles.css"></noscript>
     <title>Home | Bukowski Plumbing, Inc. South Jersey's Number 1 Plumber</title>
     <meta name="description" content="Family-owned plumbing company serving South Jersey for over 40 years. From repairs to remodels, Bukowski Plumbing, Inc. delivers expert service you can trust.">
     <meta name="keywords" content="plumber South Jersey, Cherry Hill plumbing, emergency plumbing, drain repair, water heater installation, backflow prevention, camden county plumber, south jersey plumber, burlington county plumber, atlantic county plumber, gloucester county plumber">
@@ -20,27 +21,27 @@
         <div class="header">
             <div class="header-left">
                 <div class="logo img-wrapper">
-                    <a href='./index.html'><img src="./img/bukowski-logo.webp"></a>
+                    <a href='./index.html'><img src="./img/bukowski-logo.webp" height="80px" width="229px" alt="Bukowski plumbing logo" title="Return to main page"></a>
                 </div>
             </div>
             <nav>
                 <div class="header-right">
-                    <a class="link selected large">HOME</a>
+                    <a class="link selected large" title="Main page">HOME</a>
                     <div class="dropdown">
-                        <a href="./pages/services.html" class="link large">SERVICES</a>
+                        <a class="link large">SERVICES</a>
                         <ul class="dropdown-menu">
-                            <li><a href="./pages/backflow-prevention.html">Backflow Prevention</a></li>
-                            <li><a href="./pages/commercial.html">Commercial</a></li>
-                            <li><a href="./pages/medical-facilities.html">Medical Facilities</a></li>
-                            <li><a href="./pages/real-estate.html">Real Estate</a></li>
-                            <li><a href="./pages/residential.html">Residential</a></li>
-                            <li><a href="./pages/restaurant.html">Restaurant</a></li>
-                            <li><a href="./pages/service-areas.html">Service Areas</a></li>
+                            <li><a href="./pages/backflow-prevention.html" title="Read more about backflow prevention">Backflow Prevention</a></li>
+                            <li><a href="./pages/commercial.html" title="Commercial Plumbing">Commercial</a></li>
+                            <li><a href="./pages/medical-facilities.html" title="Medical Facility Plumbing">Medical Facilities</a></li>
+                            <li><a href="./pages/real-estate.html" title="Real Estate Service Plumbing">Real Estate</a></li>
+                            <li><a href="./pages/residential.html" title="Residential Plumbing">Residential</a></li>
+                            <li><a href="./pages/restaurant.html" title="Restaurant Plumbing">Restaurant</a></li>
+                            <li><a href="./pages/service-areas.html" title="See all service areas">Service Areas</a></li>
                         </ul>
                     </div>
-                    <a href="./pages/about.html" class="link large">ABOUT</a>
-                    <a href="./pages/gallery.html" class="link large">GALLERY</a>
-                    <a href="#contact" class="header-contact large cta">CONTACT</a>
+                    <a href="./pages/about.html" class="link large" title="About Bukowski Plumbing Inc.">ABOUT</a>
+                    <a href="./pages/gallery.html" class="link large" title="Our gallery">GALLERY</a>
+                    <a href="#contact" class="header-contact large cta" title="Contact us">CONTACT</a>
 
                     <div class="hamburger" onclick="toggleMobileMenu()">
                         <span></span>
@@ -54,18 +55,18 @@
                             <div class="dropdown">
                                 <a class="mobile-service">SERVICES</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="./pages/backflow-prevention.html">Backflow Prevention</a></li>
-                                    <li><a href="./pages/commercial.html">Commercial</a></li>
-                                    <li><a href="./pages/medical-facilities.html">Medical Facilities</a></li>
-                                    <li><a href="./pages/real-estate.html">Real Estate</a></li>
-                                    <li><a href="./pages/residential.html">Residential</a></li>
-                                    <li><a href="./pages/restaurant.html">Restaurant</a></li>
-                                    <li><a href="./pages/service-areas.html">Service Areas</a></li>
+                                    <li><a href="./pages/backflow-prevention.html" title="Read more about backflow prevention">Backflow Prevention</a></li>
+                                    <li><a href="./pages/commercial.html" title="Commercial Plumbing">Commercial</a></li>
+                                    <li><a href="./pages/medical-facilities.html" title="Medical Facility Plumbing">Medical Facilities</a></li>
+                                    <li><a href="./pages/real-estate.html" title="Real Estate Service Plumbing">Real Estate</a></li>
+                                    <li><a href="./pages/residential.html" title="Residential Plumbing">Residential</a></li>
+                                    <li><a href="./pages/restaurant.html" title="Restaurant Plumbing">Restaurant</a></li>
+                                    <li><a href="./pages/service-areas.html" title="See all service areas">Service Areas</a></li>
                                 </ul>
                             </div>
-                            <a href="./pages/about.html" class="link" href="#about">ABOUT</a>
-                            <a href="./pages/gallery.html" class="link" href="#gallery">GALLERY</a>
-                            <a href="./pages/contact.html" class="contact cta" href="./pages/contact.html">CONTACT</a>
+                            <a href="./pages/about.html" class="link" title="About Bukowski Plumbing">ABOUT</a>
+                            <a href="./pages/gallery.html" class="link" title="Our Gallery">GALLERY</a>
+                            <a href="./pages/contact.html" class="contact cta" title="Contact us">CONTACT</a>
                         </div>
                         <div class="grey">
 
@@ -132,7 +133,7 @@
             </div>
             <div class="hero-contact-info">
                 <div class="hero-contact-left">
-                    <div class="hero-img img-wrapper"><img src='./img/index/truck.webp'></div>
+                    <div class="hero-img img-wrapper"><img src='./img/index/truck.webp' alt="Bukowski Plumbing South Jersey Plumber Truck"></div>
                     <div class="truck-shadow"></div>
                 </div>
                 <div class="hero-contact-right">
@@ -156,7 +157,7 @@
                 <h2 class="large-scale">About Us</h2>
                 <p class="small-scale">Bukowski Plumbing has been providing reliable plumbing services to South Jersey homeowners and businesses for over 40 years. Proudly serving communities like Moorestown, Cherry Hill, Mt. Laurel, Pennsauken, Deptford, Collingswood, Maple Shade, and Haddonfield, our licensed plumbers specialize in leak repairs, drain cleaning, water heater installation, and complete bathroom remodels. When you choose Bukowski Plumbing, you get fast, professional service you can trust.</p>
                 <p class="small-scale">Family-owned and operated, we have the quality and experience in providing excellent plumbing services. When you call us, you won't get routed through phone systems. You'll be talking directly with me. </p>
-                <a href="tel:609-876-3861" class="cta about-btn">Call Today!</a>
+                <a href="tel:609-876-3861" class="cta about-btn" title="Call Bukowski Plumbing's Emergency Line">Call Today!</a>
             </div>
             <div class="horizontal-divider"></div>
         </section>
@@ -167,55 +168,55 @@
                     <div class="service-card">
                         <h3>Commercial</h3>
                         <div class="service-card-img img-wrapper">
-                            <img src="./img/index/service-card-1.jpg">
+                            <img src="./img/index/service-card-1.jpg" alt="Commercial plumbing solutions">
                         </div>
                         <p>Bukowski Plumbing Inc. provides expert commercial plumbing services in South Jersey for offices, retail, and industrial spaces. From emergency repairs to scheduled maintenance, our licensed plumbers keep your business running without disruption.</p>
-                        <a href="./pages/commercial.html" class="ghost-btn red">Learn More</a>
+                        <a href="./pages/commercial.html" title="Commercial Plumbing" class="ghost-btn red">Visit Commercial Page</a>
                     </div>
 
                     <div class="service-card">
                         <h3>Residential</h3>
                         <div class="service-card-img img-wrapper">
-                            <img src="./img/index/service-card-2.jpg">
+                            <img src="./img/index/service-card-2.jpg" alt="Bukowski plumbing services residential units">
                         </div>
                         <p>We offer trusted residential plumbing services throughout South Jersey, including leak repairs, fixture replacements, and full plumbing installations. Our team ensures your home’s system runs efficiently, giving you comfort and peace of mind.</p>
-                        <a href="./pages/residential.html" class="ghost-btn red">Learn More</a>
+                        <a href="./pages/residential.html" title="Residential Plumbing" class="ghost-btn red">Visit Residential Page</a>
                     </div>
 
                     <div class="service-card">
                         <h3>Restaurant Services</h3>
                         <div class="service-card-img img-wrapper">
-                            <img src="./img/index/service-card-3.jpg">
+                            <img src="./img/index/service-card-3.jpg" title="Restaurant Plumbing" alt="Restaurant services are offered by Bukowski Plumbing Inc.">
                         </div>
                         <p>Restaurants can’t afford downtime. That’s why we offer 24/7 commercial plumbing for restaurants across South Jersey. From grease traps to clogged drains and restroom repairs, we respond fast to keep your kitchen moving.</p>
-                        <a href="./pages/restaurant.html" class="ghost-btn red">Learn More</a>
+                        <a href="./pages/restaurant.html" class="ghost-btn red">Visit Restaurant Page</a>
                     </div>
 
                     <div class="service-card">
                         <h3>Medical Facilities</h3>
                         <div class="service-card-img img-wrapper">
-                            <img src="./img/index/service-card-4.jpg">
+                            <img src="./img/index/service-card-4.jpg" alt="Bukowski plumbing services medical facilities">
                         </div>
                         <p>Our team specializes in plumbing for healthcare and medical facilities, ensuring reliable water and drainage systems that meet strict sanitation standards. We provide precise, code-compliant service across South Jersey.</p>
-                        <a href="./pages/medical-facilities.html" class="ghost-btn red">Learn More</a>
+                        <a href="./pages/medical-facilities.html" title="Medical Facility plumbing" class="ghost-btn red">Visit Medical Facility Page</a>
                     </div>
 
                     <div class="service-card">
                         <h3>Real Estate</h3>
                         <div class="service-card-img img-wrapper">
-                            <img src="./img/index/service-card-5.jpg">
+                            <img src="./img/index/service-card-5.jpg" alt="Bukowski plumbing servicing real estate apartments and other investment properties">
                         </div>
                         <p>We partner with real estate agents, investors, and property managers to handle plumbing inspections, certifications, winterizations, and repairs for homes and commercial properties throughout South Jersey.</p>
-                        <a href="./pages/real-estate.html" class="ghost-btn red">Learn More</a>
+                        <a href="./pages/real-estate.html" title="Real Estate plumbing" class="ghost-btn red">Visit Real Estate Page</a>
                     </div>
 
                     <div class="service-card">
                         <h3>Backflow Prevention</h3>
-                        <div class="service-card-img img-wrapper">
-                            <img src="./img/index/service-card-6.webp">
+                        <div class="service-card-img img-wrapper" >
+                            <img src="./img/index/service-card-6.webp" alt="Backflow prevention">
                         </div>
                         <p>Stay compliant and protect your water system with certified backflow prevention testing and repair. Bukowski Plumbing’s licensed backflow inspectors keep your property safe and up to code year-round.</p>
-                        <a href="./pages/backflow-prevention.html" class="ghost-btn red">Learn More</a>
+                        <a href="./pages/backflow-prevention.html" title="Backflow prevention" class="ghost-btn red">Read About Backflow Prevention</a>
                     </div>
                 </div>
             </div>
@@ -224,7 +225,7 @@
             <div class="content-container flex-even">
                 <div class="icon-holder">
                     <div class="index-icon img-wrapper">
-                        <img src="./img/index/icon1.svg">
+                        <img src="./img/index/icon1.svg" alt="plumbing icon">
                     </div>
                     <p class="med-scale boldest">Expert Plumbing Services</p>
                 </div>
@@ -232,14 +233,14 @@
 
                 <div class="icon-holder">
                     <div class="index-icon img-wrapper">
-                        <img src="./img/index/icon2.svg">
+                        <img src="./img/index/icon2.svg" alt="shield icon - bukowski plumbing has been in the business for over 40 years">
                     </div>
                     <p class="med-scale boldest">Trusted Over 40 Years</p>
                 </div>
 
                 <div class="icon-holder">
                     <div class="index-icon img-wrapper">
-                        <img src="./img/index/icon3.svg">
+                        <img src="./img/index/icon3.svg" alt="icon for fast and reliable service">
                     </div>
                     <p class="med-scale boldest">Fast and Reliable</p>
                 </div>
@@ -257,10 +258,10 @@
                         <p class="small-scale">Call and ask for Robert!</p>
                     </div>
                     <div class="emergency-img img-wrapper">
-                        <img src="./img/index/emergency-img-500.jpg">
+                        <img src="./img/index/emergency-img-500.jpg" alt="Picture of Robert Bukowski of South Jersey, Master Plumber">
                     </div>
                 </div>
-                <a href="tel:609-876-3861" class="ghost-btn white size1 centered">Call Emergency Number Now!</a>
+                <a href="tel:609-876-3861" title="Call Bukowski Plumbing's emergency number" class="ghost-btn white size1 centered">Call Emergency Number Now!</a>
             </div>
         </section>
         <section class="content-container our-process">
@@ -285,7 +286,7 @@
 
                 </div>
                 <div class="process-img img-wrapper">
-                    <img src="./img/index/process-img.webp">
+                    <img src="./img/index/process-img.webp" alt="Bukowski plumbing's service truck">
                 </div>
             </div>
             <div class="process-description">
@@ -295,7 +296,7 @@
                 <p class="small-scale">
                     When you work with us, you’ll always know what to expect. Our licensed professionals arrive on time, assess the situation thoroughly, and complete the job efficiently so you can get back to your day. With consistent communication, trusted workmanship, and decades of experience serving South Jersey homes, Bukowski Plumbing delivers a smooth, hassle-free experience that gives you peace of mind every step of the way.
                 </p>
-                <a href="#contact" class="cta centered">Send An Email Today</a>
+                <a href="#contact" class="cta centered" title="Contact Bukowski Plumbing">Send An Email Today</a>
             </div>
         </section>
         <section class="google-reviews">
@@ -336,17 +337,17 @@
                 <h2 class="large-scale theme-font centered">Proudly Serving South Jersey</h2>
                 <p class="small-scale">Bukowski Plumbing, Inc. proudly serves residential and commercial customers throughout South Jersey, including Cherry Hill, Moorestown, Mt. Laurel, Haddonfield, Maple Shade, Pennsauken, and nearby communities. Whether you need emergency repairs, plumbing installation, or water heater service, our licensed plumbers are ready to help wherever you are in the region.</p>
                 <div class="flex-center">
-                    <a href="tel:856-456-3600" class="cta">Call Our Main Office</a>
-                    <a href="tel:609-876-3861" class="cta">Call Emergency Line</a>
-                    <a href="tel:856-667-3118" class="cta">Call Maple Shade Office</a>
+                    <a href="tel:856-456-3600" title="Main Office" class="cta">Call Our Main Office</a>
+                    <a href="tel:609-876-3861" title="Emergency Line" class="cta">Call Emergency Line</a>
+                    <a href="tel:856-667-3118" title="Maple Shade Office" class="cta">Call Maple Shade Office</a>
                 </div>
                 <div class="service-area-truck">
                     <div class="truck-img img-wrapper">
-                        <img src='./img/index/truck.webp'>
+                        <img src='./img/index/truck.webp' alt="bukowski plumbing's service truck">
                         <div class="truck-shadow2"></div>
                     </div>
                 </div>
-                <a href="#contact" class="cta centered">Send an Email</a>
+                <a href="#contact" title="Send an email" class="cta centered">Send an Email</a>
             </div>
         </section>
     </main>
@@ -355,26 +356,26 @@
         <div class="footer-holder">
             <div class="footer-top-grid">
                 <div class="img-wrapper footer-logo">
-                    <img src="./img/bukowski-logo.webp">
+                    <img src="./img/bukowski-logo.webp" alt="bukowski plumbing - south jersey's number 1 plumber logo">
                 </div>
                 <div class="footer-info">
                     <span class="footer-info-line">
                         <div class="img-wrapper info-pic">
                             <img src="./img/phone-icon.svg" alt="phone icon">
                         </div>
-                        <p><a href="tel:856-456-3600">(856) 456-3600</a></p>
+                        <p><a href="tel:856-456-3600" title="Main office">(856) 456-3600</a></p>
                     </span>
                     <span class="footer-info-line">
-                        <div class="img-wrapper info-pic" alt="phone icon">
-                            <img src="./img/phone-icon.svg">
+                        <div class="img-wrapper info-pic">
+                            <img src="./img/phone-icon.svg" alt="emergency phone icon">
                         </div>
-                        <p><a href="tel:856-667-3118">(856) 667-3118</a></p>
+                        <p><a href="tel:856-667-3118" title="Maple shade office">(856) 667-3118</a></p>
                     </span>
                     <span class="footer-info-line">
                         <div class="img-wrapper info-pic">
                             <img src="./img/email-icon.svg" alt="email icon">
                         </div>
-                        <p><a>princeofplumbing@comcast.net</a></p>
+                        <p><a href="mailto:princeofplumbing@comcast.net" title="Send an email">princeofplumbing@comcast.net</a></p>
                     </span>
                     <span class="footer-info-line">
                         <p>N.J.M.P. LIC. #11801</p>
@@ -387,7 +388,7 @@
                     </span>
                 </div>
                 <div class="footer-areas">
-                    <h4>Counties Served:</h4>
+                    <h3>Counties Served:</h4>
                     <span class="footer-ul">
                         <ul>
                             <li>Atlantic County</li>
@@ -399,17 +400,17 @@
                     </span>
                 </div>
                 <div class="footer-browse">
-                    <h4>BROWSE</h4>
+                    <h3>BROWSE</h4>
                     <ul class="footer-browse-list">
-                        <li><a href="./pages/about.html">About</a></li>
-                        <li><a href="./pages/gallery.html">Gallery</a></li>
-                        <li><a href="#contact" class="footer-book">GET IN TOUCH</a></li>
+                        <li><a href="./pages/about.html" title="About Bukowski Plumbing">About</a></li>
+                        <li><a href="./pages/gallery.html" title="See gallery">Gallery</a></li>
+                        <li><a href="#contact" class="footer-book" title="contact today">GET IN TOUCH</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-divider">
                 <div class="footer-site-info">
-                    <p>&#169; Bukowski Plumbing Inc. <span class='copyright-year'>2025</span> | Website by <a href="https://cherryhillwebdev.com/index.html">Cherry Hill Web Dev</a></p>
+                    <p>&#169; Bukowski Plumbing Inc. <span class='copyright-year'>2025</span> | Website by <a href="https://cherryhillwebdev.com/index.html" title="Visit Cherry Hill Web Dev">Cherry Hill Web Dev</a></p>
                 </div>
             </div>
 
