@@ -18,6 +18,10 @@ const galleryGroups = [
     {
         id: 3,
         images: ['../img/gallery/hot-water1/hot-water1.webp', '../img/gallery/hot-water1/hot-water2.webp']
+    },
+    {
+        id: 4,
+        images: ['../img/gallery/boiler-repair1/boiler1.webp']
     }
 ]
 
