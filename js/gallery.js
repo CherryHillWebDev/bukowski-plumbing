@@ -22,6 +22,10 @@ const galleryGroups = [
     {
         id: 4,
         images: ['../img/gallery/boiler-repair1/boiler1.webp']
+    },
+    {
+        id: 5,
+        images: ['../img/gallery/emergency-pipe1/72062e6e3ae9b41ed83fac24b3953edd72ddfdc7-1.jpg', '../img/gallery/emergency-pipe1/72062e6e3ae9b41ed83fac24b3953edd72ddfdc7-3.jpg', '../img/gallery/emergency-pipe1/72062e6e3ae9b41ed83fac24b3953edd72ddfdc7-4.jpg']
     }
 ]
 
