@@ -26,6 +26,10 @@ const galleryGroups = [
     {
         id: 5,
         images: ['../img/gallery/emergency-pipe1/72062e6e3ae9b41ed83fac24b3953edd72ddfdc7-1.jpg', '../img/gallery/emergency-pipe1/72062e6e3ae9b41ed83fac24b3953edd72ddfdc7-3.jpg', '../img/gallery/emergency-pipe1/72062e6e3ae9b41ed83fac24b3953edd72ddfdc7-4.jpg']
+    },
+    {
+        id: 6,
+        images: ['../img/gallery/frozen-pipe1/4ebab723515acebb67726d9f243c09d562e17287-1.jpg', '../img/gallery/frozen-pipe1/4ebab723515acebb67726d9f243c09d562e17287-2.jpg', '../img/gallery/frozen-pipe1/4ebab723515acebb67726d9f243c09d562e17287-3.jpg', '../img/gallery/frozen-pipe1/4ebab723515acebb67726d9f243c09d562e17287-4.jpg']
     }
 ]
 
