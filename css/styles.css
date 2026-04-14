@@ -55,6 +55,10 @@
     align-items: center;
 }
 
+.auto-margin {
+    margin: auto;
+}
+
 .bold {
     font-weight: 500;
 }
@@ -84,6 +88,14 @@
     letter-spacing: -2px;
     line-height: 0.92;
 }
+
+.mt-sm  { margin-top: 0.5rem; }
+.mt-md  { margin-top: 1rem; }
+.mt-lg  { margin-top: 2rem; }
+.mt-xl  { margin-top: 4rem; }
+.mb-sm  { margin-bottom: 0.5rem; }
+.mb-md  { margin-bottom: 1rem; }
+.mb-lg  { margin-bottom: 1rem; }
 
 .size1 {
     font-size: var(--size1);
@@ -792,6 +804,139 @@ body {
     margin-bottom: 1rem;
 }
 
+/* =============================================
+   FAQ SECTION
+   Append this block to styles.css
+   ============================================= */
+ 
+.faq-section {
+    padding: 2rem 0;
+}
+ 
+.faq-subtitle {
+    margin: 0.5rem auto 2rem;
+    max-width: 600px;
+    color: #606060;
+}
+ 
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+ 
+.faq-category {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+ 
+.faq-category-title {
+    font-family: var(--theme-font);
+    font-size: clamp(1.25rem, 1rem + 0.8vw, 1.75rem);
+    color: var(--theme-blue);
+    padding: 0 0 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid var(--cta-red);
+}
+ 
+.faq-item {
+    border-bottom: 1px solid #d0d0d0;
+}
+ 
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background: none;
+    border: none;
+    padding: 1rem 0.25rem;
+    text-align: left;
+    font-family: var(--body-font);
+    font-size: clamp(0.85rem, 0.75rem + 0.3vw, 1rem);
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+ 
+.faq-question:hover {
+    color: var(--cta-red);
+}
+ 
+.faq-question[aria-expanded="true"] {
+    color: var(--cta-red);
+}
+ 
+.faq-icon {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--cta-red);
+    position: relative;
+    transition: background-color 0.2s ease, transform 0.3s ease;
+}
+ 
+.faq-icon::before,
+.faq-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+.faq-icon::before {
+    width: 10px;
+    height: 2px;
+}
+ 
+.faq-icon::after {
+    width: 2px;
+    height: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+ 
+.faq-question[aria-expanded="true"] .faq-icon {
+    background-color: var(--theme-blue);
+    transform: rotate(45deg);
+}
+ 
+.faq-answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease, padding 0.2s ease;
+    padding: 0 0.25rem;
+}
+ 
+.faq-answer:not([hidden]) {
+    max-height: 500px;
+    padding: 0 0.25rem 1rem;
+}
+ 
+.faq-answer p {
+    font-size: clamp(0.8rem, 0.7rem + 0.25vw, 0.95rem);
+    color: #444;
+    line-height: 1.7;
+}
+ 
+.faq-answer a {
+    color: var(--cta-red);
+    font-weight: 600;
+    text-decoration: none;
+}
+ 
+.faq-answer a:hover {
+    text-decoration: underline;
+}
+
 .google-reviews {
     background-color: #e7e7e7;
     margin: auto;
@@ -1401,6 +1546,105 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+/* -------- LOCATION PAGES --------*/
+.location-hero {
+    background: linear-gradient(135deg, #00024bd5 0%, #001a3bd0 100%),
+                url('../img/location/maple-shade/maple-shade-bg.webp');
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid var(--cta-red);
+}
+.location-hero h1 {
+    font-family: var(--theme-font);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 0.5rem;
+}
+.location-hero p {
+    max-width: 800px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+}
+.location-main-holder {
+    display: grid; 
+    grid-template-columns: 1fr 550px; 
+    gap: 2rem; 
+    align-items: start;
+}
+.location-main-holder .contact-form-container {
+    padding-top: 0;
+}
+.location-grid {
+    display: grid;
+    grid-template-columns: 450px 1fr ;
+    gap: 1rem;
+}
+.location-content ul {
+    width: 90%;
+    margin: auto;
+}
+.map-container {
+    margin: 2rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    height: 100%;
+}
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+.location-details {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.service-badge {
+    display: inline-block;
+    background: var(--cta-red);
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+}
+.neighbor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem;
+}
+.neighbor-list a {
+    background: #f0f0f0;
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--theme-blue);
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+.neighbor-list a:hover {
+    background: var(--cta-red);
+    color: white;
+}
+.hours-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+.hours-grid strong {
+    color: var(--theme-blue);
+}
+
+
 @media screen and (max-width: 1000px) {
     .hero-container .content-container {
         padding: 1rem
@@ -1429,7 +1673,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: left;
         width: 50%;
         padding: 1rem 0;
     }
@@ -1550,6 +1794,13 @@ body {
         right: 20px;
         top: 40%;
     }
+    .location-main-holder {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1638,6 +1889,9 @@ body {
         max-width: 350px;
         width: auto;
     }
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
     .truck-shadow {
         top: 110px;
         justify-self: center;
@@ -1654,6 +1908,13 @@ body {
         gap: 2rem;
     }
     .footer-browse-list li:nth-child(3) { margin-top: 1rem }
+    .location-details {
+        padding: 1rem;
+    }
+    .neighbor-list a {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1687,3 +1948,4 @@ body {
     font-family: "Inter";
     src: url('../fonts/Inter-VariableFont_opsz\,wght.woff2');
 }
+

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VQ5MDY8KR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6VQ5MDY8KR');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.png" type="image/x-icon">
@@ -12,7 +21,7 @@
         <div class="header">
             <div class="header-left">
                 <div class="logo img-wrapper">
-                    <a href='/index.html'><img src="/img/bukowski-logo.webp" height="80px" width="229px" alt="Bukowski plumbing logo" title="Return to main page"></a>
+                    <a href='/index.html'><img src="/img/bukowski-logo.webp" height="80px" width="229px" alt="Bukowski Plumbing logo - South Jersey plumber" title="Return to main page"></a>
                 </div>
             </div>
             <nav>
@@ -21,43 +30,53 @@
                     <div class="dropdown">
                         <a class="link large">SERVICES</a>
                         <ul class="dropdown-menu">
-                            <li><a href="/pages/backflow-prevention.html" title="Read more about backflow prevention">Backflow Prevention</a></li>
-                            <li><a href="/pages/commercial.html" title="Commercial Plumbing">Commercial</a></li>
-                            <li><a href="/pages/medical-facilities.html" title="Medical Facility Plumbing">Medical Facilities</a></li>
-                            <li><a href="/pages/real-estate.html" title="Real Estate Service Plumbing">Real Estate</a></li>
-                            <li><a href="/pages/residential.html" title="Residential Plumbing">Residential</a></li>
-                            <li><a href="/pages/restaurant.html" title="Restaurant Plumbing">Restaurant</a></li>
-                            <li><a href="/pages/service-areas.html" title="See all service areas">Service Areas</a></li>
+                            <li><a href="/pages/backflow-prevention.html">Backflow Prevention</a></li>
+                            <li><a href="/pages/commercial.html">Commercial</a></li>
+                            <li><a href="/pages/medical-facilities.html">Medical Facilities</a></li>
+                            <li><a href="/pages/real-estate.html">Real Estate</a></li>
+                            <li><a href="/pages/residential.html">Residential</a></li>
+                            <li><a href="/pages/restaurant.html">Restaurant</a></li>
+                            <li><a href="/pages/service-areas.html">Service Areas</a></li>
                         </ul>
                     </div>
-                    <a href="/pages/about.html" class="link large" title="About Bukowski Plumbing Inc.">ABOUT</a>
-                    <a href="/pages/gallery.html" class="link large" title="Our gallery">GALLERY</a>
-                    <a href="/index.html#contact" class="header-contact large cta" title="Contact us">CONTACT</a>
-
-                    <div class="hamburger" onclick="toggleMobileMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="dropdown">
+                        <a class="link large">LOCATIONS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/pages/locations/maple-shade-plumber.html">Maple Shade</a></li>
+                            <li><a href="/pages/locations/gloucester-city-plumber.html">Gloucester City</a></li>
+                        </ul>
                     </div>
-            
+                    <a href="/pages/about.html" class="link large">ABOUT</a>
+                    <a href="/pages/gallery.html" class="link large">GALLERY</a>
+                    <a href="#contact" class="header-contact large cta">CONTACT</a>
+                    <div class="hamburger" onclick="toggleMobileMenu()">
+                        <span></span><span></span><span></span>
+                    </div>
                     <div class="mobile-nav" id="mobileNav">
                         <div class="nav-links">
                             <a href="/index.html" class="link">HOME</a>
                             <div class="dropdown">
                                 <a class="mobile-service">SERVICES</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="/pages/backflow-prevention.html" title="Read more about backflow prevention">Backflow Prevention</a></li>
-                                    <li><a href="/pages/commercial.html" title="Commercial Plumbing">Commercial</a></li>
-                                    <li><a href="/pages/medical-facilities.html" title="Medical Facility Plumbing">Medical Facilities</a></li>
-                                    <li><a href="/pages/real-estate.html" title="Real Estate Service Plumbing">Real Estate</a></li>
-                                    <li><a href="/pages/residential.html" title="Residential Plumbing">Residential</a></li>
-                                    <li><a href="/pages/restaurant.html" title="Restaurant Plumbing">Restaurant</a></li>
-                                    <li><a href="/pages/service-areas.html" title="See all service areas">Service Areas</a></li>
+                                    <li><a href="/pages/backflow-prevention.html">Backflow Prevention</a></li>
+                                    <li><a href="/pages/commercial.html">Commercial</a></li>
+                                    <li><a href="/pages/medical-facilities.html">Medical Facilities</a></li>
+                                    <li><a href="/pages/real-estate.html">Real Estate</a></li>
+                                    <li><a href="/pages/residential.html">Residential</a></li>
+                                    <li><a href="/pages/restaurant.html">Restaurant</a></li>
+                                    <li><a href="/pages/service-areas.html">Service Areas</a></li>
                                 </ul>
                             </div>
-                            <a href="/pages/about.html" class="link" title="About Bukowski Plumbing">ABOUT</a>
-                            <a href="/pages/gallery.html" class="link" title="Our Gallery">GALLERY</a>
-                            <a href="/index.html#contact" class="contact cta" title="Contact us">CONTACT</a>
+                            <div class="dropdown">
+                                <a class="mobile-service">LOCATIONS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/pages/locations/maple-shade-plumber.html">Maple Shade</a></li>
+                                    <li><a href="/pages/locations/gloucester-city-plumber.html">Gloucester City</a></li>
+                                </ul>
+                            </div>
+                            <a href="/pages/about.html" class="link">ABOUT</a>
+                            <a href="/pages/gallery.html" class="link">GALLERY</a>
+                            <a href="/index.html#contact" class="contact cta">CONTACT</a>
                         </div>
                     </div>
                 </div>

@@ -73,3 +73,34 @@ function submitEmail() {
     const subject = document.querySelector('#_subject');
     subject.value = uniqueSubject;
 }
+
+/* =============================================
+   FAQ ACCORDION
+   Append this block to script.js (or index.js)
+   ============================================= */
+ 
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const isOpen = button.getAttribute('aria-expanded') === 'true';
+ 
+        // Close all other open items in the same category
+        const category = button.closest('.faq-category');
+        category.querySelectorAll('.faq-question[aria-expanded="true"]').forEach(openBtn => {
+            if (openBtn !== button) {
+                openBtn.setAttribute('aria-expanded', 'false');
+                const openAnswer = openBtn.nextElementSibling;
+                openAnswer.setAttribute('hidden', '');
+            }
+        });
+ 
+        // Toggle current item
+        if (isOpen) {
+            button.setAttribute('aria-expanded', 'false');
+            answer.setAttribute('hidden', '');
+        } else {
+            button.setAttribute('aria-expanded', 'true');
+            answer.removeAttribute('hidden');
+        }
+    });
+});
